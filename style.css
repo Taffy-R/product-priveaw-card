@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    /* ## Colors */
+
+/* ### Primary */
+
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+
+/* ### Neutral */
+
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+
+/* ## Typography */
+
+/* ### Body */
+
+--Font-size-paragraph: 16px;
+}
+body{
+    background-color: var(--Cream);
+}
+main{
+    max-width: 375px;
+    margin: 30px auto;
+    border-radius: 10px;
+    background-color: var(--White);
+    padding-bottom: 1px;
+}
+main picture img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+main h1{
+    font-size: larger;
+    letter-spacing: 5px;
+    margin: 20px 30px;
+    color: var(--Dark-grayish-blue);
+    font-weight: 500;
+    font-family: Montserrat;
+}
+main h2{
+    font-size: xx-large;
+    margin: 20px 30px;
+    font-family: Fraunces;
+}
+main p{
+    font-size: var(--Font-size-paragraph);
+    margin: 20px 30px;
+    color: var(--Dark-grayish-blue);
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 27px;
+}
+main p b{
+    color: var(--Dark-cyan);
+    font-size: xx-large;
+    font-family: Fraunces;
+}
+main p s{
+    margin: 20px;
+    vertical-align: middle;
+    font-weight: 500;
+}
+main button{
+    width: 330px;
+    display: block;
+    margin: 20px auto;
+    background-color: var(--Dark-cyan);
+    border: none;
+    font-family: Montserrat;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    color: var(--White);
+    font-size: small;
+}
+main button img{
+    margin-right: 10px;
+}
+main button:hover{
+    background-color:  hsl(158, 36%, 10%);
+}
+
+@media (min-width: 1024px) {
+    body{
+        position: relative;      
+    }
+    
+    main{
+
+        display: grid;
+        grid-template-columns:400px 400px ;
+        border-radius: 10px;
+    }
+    main header picture img{
+        border-radius: 10px 0 0 10px;
+    }
+    section{
+        background-color: var(--White);
+        border-radius: 0 10px 10px 0;
+    }
+}
