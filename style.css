@@ -117,7 +117,7 @@ main section button:hover{
     }
     main section h2{ font-size: 2.8rem; line-height: 3rem;margin-bottom: 6%;}
     main section p{ font-size: 1rem; margin-bottom: 10%;}
-
+    main section p b{ font-size: 2.5rem;}
     footer{
         position: absolute;
         bottom: 0;
